@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+#circal{
+    border: 2px solid goldenrod;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background-color: aqua;
+    position: relative;
+}
+#container div:not(:first-child){
+    padding: 10px;
+     text-align: center; 
+     margin-top: 20px;
+}
+
+#container div:not(:first-child) > button{
+    /* color: aqua; */
+    padding: 10px;
+    border-radius: 50%;
+}
+.shapes{
+   height: 100px;
+   width: 100px; 
+   /* border: 2px solid black; */
+   position: relative;
+   left: 45px;
+   top: 44px;
+   
+}
+.red-triangle{
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    clip-path: polygon(0% 0%,0% 100%,100% 100%);
+}
+.red-square{
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 100%);
+}
